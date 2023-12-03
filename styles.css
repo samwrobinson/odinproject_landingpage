@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Universal Styles */
+
+html {
+    width: 100%;
+}
+
+div {
+    display: flex;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-color: #f9faf8;
+}
+
+header {
+    margin-top: -30px;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    height: 40%;
+    width: 100%;
+    background-color: #1f2937;
+    color: #f9faf8;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 3% 10%;
+}
+
+nav div a {
+    flex: 1;
+    margin: 10px;
+}
+
+button {
+    flex: 1;
+    width: 40%;
+    height: 15%;
+    border: none;
+    border-radius: 5%;
+    background-color: #3882f6;
+    color: #f9faf8;
+}
+
+button:hover {
+    background-color: #f9faf8;
+    color: #1f2937;
+}
+
+/* Class style formatting */
+
+.header_logo {
+    height: 50px;
+    width: auto;
+}
+
+.main_content {
+    display: flex;
+    width: 80%;
+    margin: 4% 10%;
+    height: auto;
+    flex-direction: row;
+    gap: 70px;
+}
+
+.welcome_content {
+    flex-direction: column;
+}
+
+.main_content img {
+    height: auto;
+    width: 50%;
+    object-fit: cover;
+    border-radius: 5% 10% 0 2%;
+}
+
+.main_content p {
+    font-weight: 200;
+}
+
+.galleries {
+    width: 80%;
+    height: 30%;
+    margin: 4% 10%;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#gallery_icons {
+    flex: 1;
+    flex-direction: row;
+    width: 80%;
+    margin: 3% 10%;
+    justify-content: space-around;
+}
+.galleries h2 {
+    width: auto;
+    height: auto;
+    text-align: center;
+}
+
+.icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: #1f2937 solid 2px;
+    width: 150px;
+    height: 150px;
+}
+
+#stio, #skida, #wren {
+    object-fit: cover;
+    width: 150px;
+    height: 150px;
+    border-radius: 4%;
+}
