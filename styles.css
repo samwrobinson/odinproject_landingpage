@@ -47,10 +47,11 @@ nav div a {
     margin: 10px;
 }
 
-button {
+.welcome_content button {
     flex: 1;
     width: 40%;
     height: 15%;
+    max-height: 50px;
     border: none;
     border-radius: 5%;
     background-color: #3882f6;
@@ -65,7 +66,7 @@ button:hover {
 /* Class style formatting */
 
 .header_logo {
-    height: 50px;
+    height: 100px;
     width: auto;
 }
 
@@ -93,7 +94,7 @@ button:hover {
     font-weight: 200;
 }
 
-.galleries {
+.galleries, .testimonials {
     width: 80%;
     height: 30%;
     margin: 4% 10%;
@@ -124,9 +125,85 @@ button:hover {
     height: 150px;
 }
 
+.icon:hover {
+    border: rgb(56, 128, 245) solid 2px;
+    box-shadow: 3px -7px rgba(56, 128, 245, .5);
+}
+
 #stio, #skida, #wren {
     object-fit: cover;
     width: 150px;
     height: 150px;
     border-radius: 4%;
+
+}.testimonials {
+    background-color: #e5e7eb;
+    width: 100%;
+    height: 40%;
+    margin: 0;
+}
+
+.quote_block {
+    width: 60%;
+    margin: 0 20%;
+    flex-direction: column;
+}
+.feedback {
+    width: 100%;
+    justify-content: flex-start;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+#quote {
+    display: flex;
+    width: auto;
+    justify-content: flex-end;
+    font-weight: 200;
+    font-style: italic;
+}
+.description {
+    flex-direction: column;
+    width: 150px;
+    font-size: .8em;
+}
+.description img {
+    margin-bottom: 8%;
+}
+.call_action {
+    flex-direction: column;
+    width: 60%;
+    height: auto;
+    font-size: .9rem;
+    color: #e5e7eb;
+    justify-content: center;
+}
+.call_action h3 {
+    margin: 0;
+}
+.galleries .call_action p {
+    margin: 0;
+}
+.sub_banner p {
+    margin: 0;
+}
+.sub_banner {
+    width: 80%;
+    height: 30%;
+    margin: 4% 10%;
+    border-radius: 10px;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    background-color: #3882f6;
+    padding: 2%;
+}
+.sign_up {
+    border: #e5e7eb solid 2px;
+    border-radius: 10px;
+    width: 100px;
+    height: 50px;
+}
+.sign_up:hover {
+    background-color: #1f2937;
+    color:#e5e7eb;
 }
